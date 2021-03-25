@@ -15,7 +15,13 @@ El módulo Gestión de personal es la base para trabajar con los individuos que 
 
 Este módulo se relaciona estrechamente con Organización debido a que proporciona el factor humano que intregra la estructura de dicha organización. 
 
+***Flujos de vida de la gestión del personal:***
 
+![flujoPersonal](https://github.com/OsepModernizacion/M4/blob/main/imagen2.JPG)
+
+***Interacciones del módulo de gestión del personal con otros módulos:***
+
+![Interaciones](https://github.com/OsepModernizacion/M4/blob/main/imagen3.JPG)
 
 ## Definición de Personas
 
