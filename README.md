@@ -1,4 +1,4 @@
-# Configuraciones Generales Meta4 People Net 8
+# Conceptos Generales Meta4 People Net 8
 
 ## Ciclo de vida de gestión de personal
 
