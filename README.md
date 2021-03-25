@@ -21,7 +21,7 @@ Este módulo se relaciona estrechamente con Organización debido a que proporcio
 
 ***Interacciones del módulo de gestión del personal con otros módulos:***
 
-![Interaciones](https://github.com/OsepModernizacion/M4/blob/main/imagen3.JPG)
+![Interaciones](https://github.com/OsepModernizacion/M4/blob/main/imagen3.jpg)
 
 ## Definición de Personas
 
