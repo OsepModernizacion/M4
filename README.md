@@ -3,7 +3,7 @@
 ## Ciclo de vida de gestión de personal
 
 
-Dentro de la empresa, People Net diferencia tres niveles de información: persona, periodo del recurso humano y rol del recurso humano. 
+Dentro de la empresa, People Net diferencia tres niveles de información: persona, período del recurso humano y rol del recurso humano. 
 
 * Cada nivel incluye información del nivel anterior. Para cargar un rol debemos tener un período previamente cargado y para cargar un período debemos tener una persona previamente cargada.
 * Una persona puede cargarse en la aplicación como candidato o como periodo del RH (Gestión del Personal | Movimientos de Personal | Alta del Empleado)
@@ -28,7 +28,7 @@ Este módulo se relaciona estrechamente con Organización debido a que proporcio
 ## Definición de Personas
 
 ### Mantenimiento de la persona 
-Para registrar los datos basicos de una persona debemos completar de manera obligatoria:
+Para registrar los datos básicos de una persona debemos completar de manera obligatoria:
 * Nombre y Apellidos (1er Apellido obligatorio)
 * Fecha de Nacimiento
 * Tipo de Documento y número
@@ -48,23 +48,19 @@ Información complementaria a cargar:
 * Mantenimiento de familiares
 * Mantenimineto de CV
 * Mantenimiento de la info. medica
-* Gestionar Documentos: para la implementación de m4 en OSEP utilizaremos esta opción para cargar la foja de servicio de SIGA, para registrar la transición de ambos sistemas. (Lo historico en SIGA y la nueva implementacion a partir de M4).
+* Gestionar Documentos: para la implementación de m4 en OSEP utilizaremos esta opción para cargar la foja de servicio de SIGA, para registrar la transición de ambos sistemas (lo histórico en SIGA y la nueva implementacion a partir de M4).
 
 
 ## Alta del Empleado
 
 Gestión del Personal | Movimientos de Personal | Alta del Empleado
 
-En función del tipo de contratación que se realice (empleado, empleado externo), la aplicación le
-habilitará las opciones que tendrá que cumplimentar y deshabilitará las que no sean específicas
-de ese tipo de contratación.
+En función del tipo de contratación que se realice (empleado, empleado externo), la aplicación le habilitará las opciones que tendrá que cumplimentar y deshabilitará las que no sean específicas de ese tipo de contratación.
 
 En nuestra implementación eligiremos siempre la opción **EMPLEADO (01)**.
 
-Un empleado, a lo largo de su relación con la organización, puede tener varios periodos de RH.
-Si da de alta a un nuevo periodo de RH, es decir a una persona ya contratada, el sistema
-generará un nuevo periodo del RH para esa persona. Si desea modificar los datos del periodo
-generado, acuda a la opción Mantenimiento del periodo.
+Un empleado, a lo largo de su relación con la organización, puede tener varios períodos de RH.
+Si da de alta a un nuevo periodo de RH, es decir a una persona ya contratada, el sistema generará un nuevo periodo del RH para esa persona. Si desea modificar los datos del período generado, acuda a la opción Mantenimiento del período.
 
 * **Definiremos al menos un período por la locación de servicios y un período por la planta (ya sea temporal o permanente) de una persona.**
 
@@ -73,12 +69,11 @@ generado, acuda a la opción Mantenimiento del periodo.
 ***Datos previos al alta***:
 * Fecha de alta (fecha en la que el empleado inicia su período)
 * Tipo Empleado (siempre 01)
-* Tipo Alta: se recomienda usar los tipos de altas creados como parametros, esto permite utilizar plantillas en la carga(trae datos predefinidos por defecto).
+* Tipo Alta: se recomienda usar los tipos de altas creados como parámetros, esto permite utilizar plantillas en la carga (trae datos predefinidos por defecto).
 
 Una buena práctica al momento de dar de alta un empleado es revisar si el empleado existe previamente como persona (en Mantenimiento del Rol). Si la persona no existe, colocar la opción **Nueva Alta**. En caso de que la persona exista, buscar por ID RH o número de documento preferentemente y seleccionar la opción **Aceptar**.
 
 Si doy de alta un empleado que ya existía como persona con la opción **Nueva Alta**, el sistema me dejará guardar los cambios pero me saldrá un mensaje informativo de que hay una persona duplicada. Voy a tener dos empleados con distintos ID RHH pero con el mismo CUIL. 
-
 
 ***Datos a cargar en el alta del empleado***
 
@@ -100,7 +95,6 @@ Si doy de alta un empleado que ya existía como persona con la opción **Nueva A
 * Telofono fijo y movil
 * Correo
 * Codigo postal 
-
 
 **En Organización**
 * Empresa: siempre el IDEmpresa empieza con OS (efector donde pertenece el empleado)
@@ -140,17 +134,14 @@ Si doy de alta un empleado que ya existía como persona con la opción **Nueva A
     * Moneda: pesos argentinos
 
 ## Creación y Mantenimiento de roles de RH
-El rol de un empleado es el conjunto de tareas y responsabilidades que conlleva el ejercicio de la actividad profesional en su puesto de trabajo. Por tanto, la definición de un rol supone la
-asignación de un puesto a un empleado. Por lo tanto, se establece una relación entre aquel, la
-unidad organizativa y lugar de trabajo.
+El rol de un empleado es el conjunto de tareas y responsabilidades que conlleva el ejercicio de la actividad profesional en su puesto de trabajo. Por tanto, la definición de un rol supone la asignación de un puesto a un empleado. Por lo tanto, se establece una relación entre aquel, la unidad organizativa y lugar de trabajo.
 
-La asignación de un empleado a un puesto de trabajo se realiza por los diferentes procesos de
-movimientos de empleados, tales como el alta del empleado o la creación de un nuevo rol.
+La asignación de un empleado a un puesto de trabajo se realiza por los diferentes procesos de movimientos de empleados, tales como el alta del empleado o la creación de un nuevo rol.
 
 Inicialmente, cuando se da de alta un empleado, se crea automáticamente un rol principal con el
 puesto indicado en el alta. Posteriormente, puede editar información relacionada con este rol.
-Un periodo puede tener un rol principal y varios secundarios. Mientras el periodo esté abierto,
-siempre debe existir un rol principal. Además, en un periodo no pueden existir dos o más roles
+Un período puede tener un rol principal y varios secundarios. Mientras el período esté abierto,
+siempre debe existir un rol principal. Además, en un período no pueden existir dos o más roles
 principales de forma simultánea en el tiempo.
 
 
@@ -181,9 +172,9 @@ En las situaciones más frecuentes, se dará de baja al empleado y, con ello, co
 * Si se han producido errores en los datos de la baja (fecha de la baja, motivo, etcétera), modificar dicha información.
 * Si los errores se basan en que la baja no es correcta, revertir el proceso de baja, es decir, cancelarla por completo.
 
-La baja supone el cierre o fin del periodo del RH creado a través del proceso Alta del empleado.
+La baja supone el cierre o fin del período del RH creado a través del proceso Alta del empleado.
 
-El proceso puede ejecutarse para un individuo o para un grupo. Se permite la baja masiva de varios periodos de RH diferentes, siempre que la fecha y motivo de baja sean los mismos. La fecha de baja se utiliza para cerrar el rol principal, los secundarios abiertos y los historiales que tenga asociados el periodo del RH.
+El proceso puede ejecutarse para un individuo o para un grupo. Se permite la baja masiva de varios períodos de RH diferentes, siempre que la fecha y motivo de baja sean los mismos. La fecha de baja se utiliza para cerrar el rol principal, los secundarios abiertos y los historiales que tenga asociados el período del RH.
 Después de consumar el proceso de baja, en el caso de que se necesite volver a contratar al empleado, se ejecutará el proceso Alta del empleado. Debido a que la aplicación ya dispone de los datos sobre el periodo del RH, éstos se pueden recuperar y volver a utilizar sin necesidad de tener que introducirlos.
 
 Gestión de personal | Movimientos de personal | Baja del empleado
@@ -201,12 +192,12 @@ Gestión de personal | Movimientos de personal | Cancelar o modificar bajas
 
 * Para cancelar una baja:
     1. Compruebe que el botón de radio Cancelar baja está marcado.
-    2. Seleccione el periodo del empleado para el que desee cancelar la baja.
-    3. Haga clic en el botón Añadir. El periodo aparece en la parte inferior. Repita estos pasos hasta haber seleccionado todos los periodos para los que quiere cancelar la baja.
+    2. Seleccione el período del empleado para el que desee cancelar la baja.
+    3. Haga clic en el botón Añadir. El período aparece en la parte inferior. Repita estos pasos hasta haber seleccionado todos los períodos para los que quiere cancelar la baja.
     4. Haga clic en el botón Ejecutar proceso. Concluido el proceso de cancelación observe en el registro que tanto la fecha de baja como el motivo de baja están ahora vacíos.
 
 * Para modificar la baja:
     1. Marque el boton de radio modificar baja
-    2. Indique la nueva fecha o motivo de baja. La fecha de modificación de la baja tiene que ser mayor o igual a la fecha de baja del periodo.
-    3. Seleccione el periodo del empleado para el que desea ejecutar algún cambio en la baja.
+    2. Indique la nueva fecha o motivo de baja. La fecha de modificación de la baja tiene que ser mayor o igual a la fecha de baja del período.
+    3. Seleccione el período del empleado para el que desea ejecutar algún cambio en la baja.
     
