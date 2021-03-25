@@ -12,7 +12,7 @@ Dentro de la empresa, People Net diferencia tres niveles de información: person
 
 El módulo Gestión de personal es la base para trabajar con los individuos que mantienen una relación con la empresa. Los datos que se suministran en él, se utilizan en el resto de los módulos funcionales de PeopleNet (Nómina, Formación, Selección, Conocimientos+, etcétera).
 
-https://github.com/OsepModernizacion/M4/blob/main/Ciclo%20de%20Vida%20del%20Personal.jpg
+![Ciclo de vida](https://github.com/OsepModernizacion/M4/blob/main/Ciclo%20de%20Vida%20del%20Personal.jpg)
 
 Este módulo se relaciona estrechamente con Organización debido a que proporciona el factor humano que intregra la estructura de dicha organización. 
 
